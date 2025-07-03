@@ -9,8 +9,8 @@ from transformers import (
     TrainingArguments,
     Trainer
 )
-from datasets import load_from_disk, load_metric
-import matplotlib.pyplot as plt
+from datasets import load_from_disk
+import evaluate
 from tqdm import tqdm
 import json
 from datetime import datetime
@@ -220,7 +220,7 @@ class SummarizationTrainer:
         
         def calculate_rouge_scores(dataset, model, tokenizer, batch_size=16):
             """Calculate ROUGE scores on test dataset"""
-            rouge_metric = load_metric('rouge')
+            rouge_metric = evaluate.load('rouge')
             
             article_batches = list(generate_batch_sized_chunks(dataset['dialogue'], batch_size))
             target_batches = list(generate_batch_sized_chunks(dataset['summary'], batch_size))
