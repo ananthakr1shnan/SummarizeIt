@@ -1,0 +1,17 @@
+{
+  "timestamp": "20250702_122523",
+  "model_name": "google/pegasus-cnn_dailymail",
+  "rouge_scores": {
+    "rouge1": 0.01862302517078307,
+    "rouge2": 0.00030364563215074436,
+    "rougeL": 0.01852023036623126,
+    "rougeLsum": 0.018543109345489937
+  },
+  "training_config": {
+    "epochs": 1,
+    "batch_size": 1,
+    "learning_rate": 5e-05,
+    "max_input_length": 1024,
+    "max_target_length": 128
+  }
+}

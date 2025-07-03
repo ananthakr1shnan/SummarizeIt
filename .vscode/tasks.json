@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SummarizeIt: Quick Setup",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"setup_and_run.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
