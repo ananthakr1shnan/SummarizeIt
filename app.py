@@ -8,17 +8,16 @@ import sys
 import logging
 from pathlib import Path
 
-# Add src to path for imports
 sys.path.append(str(Path(__file__).parent))
 
-# Import your model
+  
 from src.model.summarizer import SummarizationModel
 
-# Setup logging
+  
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Global model instance
+  
 model = None
 
 def load_model():
@@ -27,7 +26,7 @@ def load_model():
     try:
         logger.info("Loading summarization model...")
         
-        # Check if fine-tuned model exists
+          
         fine_tuned_path = "./models/pegasus-samsum-model"
         tokenizer_path = "./models/tokenizer"
         
@@ -56,14 +55,13 @@ def summarize_text(text, summary_length="medium", input_type="auto"):
         return "⚠️ Please enter some text to summarize."
     
     try:
-        # Detect input type if auto
+          
         if input_type == "auto":
             input_type = model.detect_input_type(text)
         
-        # Generate summary
+        
         result = model.summarize_text(text, summary_length)
         
-        # Format output
         summary = result['summary']
         stats = f"""
 **Summary Statistics:**
@@ -84,7 +82,7 @@ def summarize_text(text, summary_length="medium", input_type="auto"):
 def create_interface():
     """Create the Gradio interface"""
     
-    # Custom CSS for better styling
+      
     css = """
     .gradio-container {
         font-family: 'IBM Plex Sans', sans-serif;
@@ -108,7 +106,7 @@ def create_interface():
         
         with gr.Row():
             with gr.Column(scale=2):
-                # Input section
+            
                 gr.Markdown("### 📥 Input Text")
                 text_input = gr.Textbox(
                     label="Text to Summarize",
@@ -135,7 +133,7 @@ def create_interface():
                 summarize_btn = gr.Button("✨ Summarize", variant="primary", size="lg")
                 
             with gr.Column(scale=2):
-                # Output section
+                
                 gr.Markdown("### 📤 Summary")
                 summary_output = gr.Textbox(
                     label="Generated Summary",
@@ -150,7 +148,6 @@ def create_interface():
                     value="*Summary statistics will appear here*"
                 )
         
-        # Example section
         gr.Markdown("### 📚 Try These Examples")
         
         examples = [
@@ -180,14 +177,12 @@ John: Sounds perfect. I'll make reservations.""",
             cache_examples=False
         )
         
-        # Event handlers
         summarize_btn.click(
             fn=summarize_text,
             inputs=[text_input, summary_length, input_type],
             outputs=[summary_output, stats_output]
         )
         
-        # Footer
         gr.Markdown("""
         ---
         ### 🔧 About
@@ -204,18 +199,18 @@ John: Sounds perfect. I'll make reservations.""",
 
 def main():
     """Main function to run the app"""
-    # Load model on startup
+      
     load_status = load_model()
     logger.info(f"Model loading status: {load_status}")
     
-    # Create and launch interface
+      
     interface = create_interface()
     
-    # Launch with appropriate settings for HF Spaces
+      
     interface.launch(
-        share=False,  # Don't create public URL (HF Spaces handles this)
-        server_name="0.0.0.0",  # Listen on all interfaces
-        server_port=7860,  # Default HF Spaces port
+        share=False,    
+        server_name="0.0.0.0",    
+        server_port=7860,    
         show_error=True,
         show_tips=True
     )
