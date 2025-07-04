@@ -229,7 +229,7 @@ Train your own model with custom data:
 python main.py train
 
 # Custom configuration in config/settings.py
-NUM_EPOCHS = 4 (For high perfomance, train with 1 epoch in minimum hardware conditions)
+NUM_EPOCHS = 4 # Use 4 for full training. Set to 1 if you're working with limited hardware
 BATCH_SIZE = 2
 LEARNING_RATE = 5e-5
 ```
