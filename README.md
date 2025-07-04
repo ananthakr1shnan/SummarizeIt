@@ -1,7 +1,8 @@
-# 📝 SummarizeIt — AI-Powered Summarization App
-**Transform chat and article content into concise summaries using a fine-tuned Pegasus transformer.**
-
 <div align="center">
+
+# 📝 SummarizeIt — AI-Powered Summarization App
+
+
 
 **A full-stack AI app that summarizes long conversations and articles using a fine-tuned Pegasus transformer. Includes chat vs. paragraph detection, summary length control, REST API, and clean responsive UI.**
 
@@ -10,7 +11,6 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-*An end-to-end AI-powered text summarization web application built with fine-tuned Pegasus transformer*
 
 **Tech Stack:** Python • FastAPI • Transformers • PyTorch • Bootstrap • Docker
 
