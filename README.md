@@ -12,6 +12,8 @@
 
 *An end-to-end AI-powered text summarization web application built with fine-tuned Pegasus transformer*
 
+**Tech Stack:** Python • FastAPI • Transformers • PyTorch • Bootstrap • Docker
+
 [🎯 **Try it Live**](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it) • [🤖 **Model**](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned) • [🐛 **Report Bug**](https://github.com/ananthakr1shnan/SummarizeIt/issues)
 
 </div>
@@ -20,7 +22,8 @@
 
 ## ✨ Features
 
-- **🧠 Fine-tuned Pegasus Model** - Optimized for both chat and article summarization
+- **🧠 Fine-tuned Pegasus Model** - Optimized for both chat and article summarization using SAMSum dataset
+- **🤗 Hugging Face Integration** - Model deployed on Hugging Face Hub, app hosted on Spaces
 - **🎯 Smart Input Detection** - Automatically detects chat vs. paragraph format
 - **📏 Multiple Summary Lengths** - Short, medium, and long summary options
 - **🌐 Modern Web Interface** - Clean, responsive design with real-time processing
@@ -36,21 +39,7 @@
 
 ### 💻 **Local Setup**
 
-**Option 1: One-Command Setup**
-```bash
-git clone https://github.com/ananthakr1shnan/SummarizeIt.git
-cd SummarizeIt
-python setup_and_run.py
-```
-
-**Option 2: Docker**
-```bash
-git clone https://github.com/ananthakr1shnan/SummarizeIt.git
-cd SummarizeIt
-docker-compose up --build
-```
-
-**Option 3: Manual Setup**
+**Option 1: Manual Setup**
 ```bash
 git clone https://github.com/ananthakr1shnan/SummarizeIt.git
 cd SummarizeIt
@@ -61,11 +50,26 @@ python main.py setup
 python main.py serve
 ```
 
+**Option 2: Docker**
+```bash
+git clone https://github.com/ananthakr1shnan/SummarizeIt.git
+cd SummarizeIt
+docker-compose up --build
+```
+
+
 **🌐 Access the app at:** `http://localhost:8000`
 
 ## 📋 Requirements
 
-- Python 3.8+
+**Tech Stack:**
+- **Backend:** Python 3.8+, FastAPI, Uvicorn
+- **AI/ML:** Transformers, PyTorch, Datasets
+- **Frontend:** Bootstrap, HTML/CSS/JavaScript
+- **Deployment:** Docker, Hugging Face Spaces
+- **Model:** Fine-tuned Pegasus (google/pegasus-cnn_dailymail)
+
+**System Requirements:**
 - 8GB+ RAM (for model training)
 - CUDA GPU (optional, for faster training)
 - Docker (optional)
@@ -167,7 +171,14 @@ The training process includes:
 4. ROUGE evaluation
 5. Model saving
 
-## 🐳 Docker Deployment
+## 🚀 Deployment
+
+### 🤗 **Hugging Face Deployment**
+- **Live App:** Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
+- **Model Hub:** Fine-tuned model available at [Hugging Face Hub](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
+- **Zero Setup:** No installation required, just click and use!
+
+### 🐳 **Docker Deployment**
 
 ```bash
 # Development
@@ -185,3 +196,4 @@ docker-compose up -d
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
