@@ -16,6 +16,11 @@
 
 [🎯 **Try it Live**](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it) • [🤖 **Model**](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned) • [🐛 **Report Bug**](https://github.com/ananthakr1shnan/SummarizeIt/issues)
 
+
+
+> 📖 Inspired by recent research on fine-tuning Pegasus for dialogue summarization  
+> (see [this paper](https://www.researchgate.net/publication/386188562_Fine_tuning_the_large_language_pegasus_model_for_dialogue_summarization))  
+
 </div>
 
 ---
@@ -254,6 +259,15 @@ The training process includes:
 - **Zero Setup:** No installation required, just click and use!
 
 ---
+
+## 📚 Reference
+
+This project draws inspiration from:
+
+[Fine-tuning the Large Language Pegasus Model for Dialogue Summarization](https://www.researchgate.net/publication/386188562_Fine_tuning_the_large_language_pegasus_model_for_dialogue_summarization)
+
+---
+
 
 ## 📄 License
 
