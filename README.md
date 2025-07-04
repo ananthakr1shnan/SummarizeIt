@@ -6,7 +6,6 @@
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Hugging_Face-yellow.svg)](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
 [![Model](https://img.shields.io/badge/🤖_Model-Hugging_Face-blue.svg)](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
-[![GitHub](https://img.shields.io/badge/📚_Code-GitHub-black.svg)](https://github.com/ananthakr1shnan/SummarizeIt)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
