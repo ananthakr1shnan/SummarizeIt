@@ -30,6 +30,66 @@
 - **🔌 RESTful API** - Complete API with OpenAPI documentation
 - **📊 ROUGE Evaluation** - Comprehensive model performance metrics
 
+## 🔄 How It Works
+
+### 📊 **Complete Workflow**
+
+```mermaid
+graph TD
+    A[📚 SAMSum Dataset] --> B[🔧 Data Preprocessing]
+    B --> C[🧠 Fine-tune Pegasus Model]
+    C --> D[📈 Model Evaluation]
+    D --> E[💾 Save Fine-tuned Model]
+    E --> F[🤗 Upload to Hugging Face Hub]
+    F --> G[🚀 Deploy FastAPI App]
+    G --> H[🌐 Hugging Face Spaces]
+    
+    I[👤 User Input] --> J{📝 Input Type Detection}
+    J -->|Chat| K[💬 Chat Processing]
+    J -->|Article| L[📄 Article Processing]
+    K --> M[🤖 Pegasus Model]
+    L --> M
+    M --> N[📋 Generate Summary]
+    N --> O[📊 Calculate Metrics]
+    O --> P[✅ Return Results]
+```
+
+### 🎯 **Processing Pipeline**
+
+1. **📥 Input Processing**
+   - Detect input type (chat conversation vs. article)
+   - Clean and preprocess text
+   - Handle file uploads (.txt, .md)
+
+2. **🧠 AI Summarization**
+   - Load fine-tuned Pegasus model from Hugging Face Hub
+   - Tokenize input text (max 1024 tokens)
+   - Generate summary based on selected length
+   - Apply post-processing filters
+
+3. **📊 Output Generation**
+   - Calculate compression ratio
+   - Compute summary statistics
+   - Format response with metadata
+   - Return JSON response or web interface
+
+### 🔧 **Model Training Pipeline**
+
+```mermaid
+graph LR
+    A[📚 SAMSum Dataset<br/>16k+ conversations] --> B[🔧 Tokenization<br/>Max 1024 tokens]
+    B --> C[🎯 Fine-tuning<br/>4 epochs]
+    C --> D[📈 ROUGE Evaluation<br/>R-1, R-2, R-L]
+    D --> E[💾 Model Export<br/>HuggingFace format]
+```
+
+**Training Stats:**
+- **Dataset:** 16,000+ chat conversations
+- **Training Time:** 2-4 hours (GPU) / 8-12 hours (CPU)
+- **Model Size:** ~2.3GB
+- **Performance:** 11.9% improvement in ROUGE-1 score
+
+
 ## 🚀 Quick Start
 
 ### 🎯 **Try Online** (No Installation Required)
