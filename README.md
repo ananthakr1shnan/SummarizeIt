@@ -22,7 +22,7 @@
 
 ## ✨ Features
 
-- **🧠 Fine-tuned Pegasus Model** - Optimized for both chat and article summarization using SAMSum dataset
+- **🧠 Fine-tuned Pegasus Model** - Trained on SAMSum for summarizing dialogue and paragraphs
 - **🤗 Hugging Face Integration** - Model deployed on Hugging Face Hub, app hosted on Spaces
 - **🎯 Smart Input Detection** - Automatically detects chat vs. paragraph format
 - **📏 Multiple Summary Lengths** - Short, medium, and long summary options
@@ -182,7 +182,9 @@ python main.py evaluate   # Evaluate model
 | ROUGE-2 | 0.19 | **0.23** | +21.1% |
 | ROUGE-L | 0.34 | **0.39** | +14.7% |
 
-⚠️ Due to hardware limitations, the model was trained for only 1 epoch. Improved ROUGE scores are expected with full training (4 epochs) on high-performance GPUs.
+⚠️ **Note:** Due to hardware constraints, the model was trained for **1 epoch**.  
+    Full training with 4 epochs and a high-performance GPU would significantly improve results.
+
 
 ### Performance Stats
 - **Processing Speed**: ~2-3 seconds per summary
@@ -258,4 +260,11 @@ The training process includes:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
+## 🙋‍♂️ About Me
+
+Hi, I'm **Ananthakrishnan K** — a B.Tech CS student passionate about Machine Learning and AI.  
+This project is part of my journey to master NLP and build real-world AI tools.
+
+📫 [Email](mailto:ananthakrishnan073@gmail.com) • [LinkedIn](https://www.linkedin.com/in/ananthakrishnank/) • 
 
