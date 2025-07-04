@@ -227,7 +227,7 @@ Train your own model with custom data:
 python main.py train
 
 # Custom configuration in config/settings.py
-NUM_EPOCHS = 4
+NUM_EPOCHS = 4 (For high perfomance, train with 1 epoch in minimum hardware conditions)
 BATCH_SIZE = 2
 LEARNING_RATE = 5e-5
 ```
@@ -235,7 +235,7 @@ LEARNING_RATE = 5e-5
 The training process includes:
 1. Download SAMSum dataset
 2. Preprocessing and tokenization
-3. Model training (4 epochs)
+3. Model training 
 4. ROUGE evaluation
 5. Model saving
 
