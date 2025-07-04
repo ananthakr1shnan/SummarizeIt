@@ -30,6 +30,8 @@
 - **🔌 RESTful API** - Complete API with OpenAPI documentation
 - **📊 ROUGE Evaluation** - Comprehensive model performance metrics
 
+---
+
 ## 🔄 How It Works
 
 ### 📊 **Complete Workflow**
@@ -89,6 +91,7 @@ graph LR
 - **Model Size:** ~2.3GB
 - **Performance:** 11.9% improvement in ROUGE-1 score
 
+---
 
 ## 🚀 Quick Start
 
@@ -118,6 +121,8 @@ docker-compose up --build
 
 **🌐 Access the app at:** `http://localhost:8000`
 
+---
+
 ## 📋 Requirements
 
 **Tech Stack:**
@@ -131,6 +136,8 @@ docker-compose up --build
 - 8GB+ RAM (for model training)
 - CUDA GPU (optional, for faster training)
 - Docker (optional)
+
+---
 
 ## 🎯 Usage
 
@@ -162,6 +169,8 @@ python main.py train      # Train model (2-4 hours)
 python main.py serve      # Start web server
 python main.py evaluate   # Evaluate model
 ```
+
+---
 
 ## 🧠 Model Performance
 
@@ -207,6 +216,7 @@ python main.py evaluate   # Evaluate model
   "input_type": "paragraph"
 }
 ```
+---
 
 ## 🎓 Training
 
@@ -229,12 +239,16 @@ The training process includes:
 4. ROUGE evaluation
 5. Model saving
 
+---
+
 ## 🚀 Deployment
 
 ### 🤗 **Hugging Face Deployment**
 - **Live App:** Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
 - **Model Hub:** Fine-tuned model available at [Hugging Face Hub](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
 - **Zero Setup:** No installation required, just click and use!
+
+---
 
 ## 📄 License
 
