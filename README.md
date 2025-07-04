@@ -181,6 +181,8 @@ python main.py evaluate   # Evaluate model
 | ROUGE-2 | 0.19 | **0.23** | +21.1% |
 | ROUGE-L | 0.34 | **0.39** | +14.7% |
 
+⚠️ Due to hardware limitations, the model was trained for only 1 epoch. Improved ROUGE scores are expected with full training (4 epochs) on high-performance GPUs.
+
 ### Performance Stats
 - **Processing Speed**: ~2-3 seconds per summary
 - **Memory Usage**: ~2GB GPU / ~4GB CPU
