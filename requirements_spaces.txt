@@ -14,7 +14,7 @@ rouge-score>=0.1.2
   
 pandas>=1.3.0
 numpy>=1.21.0
-tqdm>=4.62.0
+tqdm>=4.62
 
   
 nltk>=3.7

@@ -21,8 +21,6 @@ class SummarizationModel:
         self.device = torch.device(DEVICE if torch.cuda.is_available() else "cpu")
         logger.info(f"Using device: {self.device}")
         
-          
-          
         if model_path is None:
             self.model_name = FINE_TUNED_MODEL_PATH if os.path.exists(FINE_TUNED_MODEL_PATH) else MODEL_NAME
         else:
@@ -33,7 +31,6 @@ class SummarizationModel:
         else:
             self.tokenizer_name = tokenizer_path if os.path.exists(tokenizer_path) else MODEL_NAME
         
-          
         self._load_model()
         
     def _load_model(self):
