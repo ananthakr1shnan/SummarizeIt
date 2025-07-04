@@ -1,8 +1,9 @@
-# SummarizeIt 🚀
+# 📝 SummarizeIt — AI-Powered Summarization App
+**Transform chat and article content into concise summaries using a fine-tuned Pegasus transformer.**
 
 <div align="center">
 
-**Transform lengthy texts into concise, meaningful summaries with AI**
+**A full-stack AI app that summarizes long conversations and articles using a fine-tuned Pegasus transformer. Includes chat vs. paragraph detection, summary length control, REST API, and clean responsive UI.**
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Hugging_Face-yellow.svg)](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
 [![Model](https://img.shields.io/badge/🤖_Model-Hugging_Face-blue.svg)](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
