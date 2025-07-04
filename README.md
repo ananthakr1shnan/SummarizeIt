@@ -7,7 +7,7 @@
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Hugging_Face-yellow.svg)](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
 [![Model](https://img.shields.io/badge/🤖_Model-Hugging_Face-blue.svg)](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
 [![GitHub](https://img.shields.io/badge/📚_Code-GitHub-black.svg)](https://github.com/ananthakr1shnan/SummarizeIt)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 *An end-to-end AI-powered text summarization web application built with fine-tuned Pegasus transformer*
@@ -29,7 +29,6 @@
 - **🌐 Modern Web Interface** - Clean, responsive design with real-time processing
 - **📁 File Upload Support** - Handle .txt and .md files up to 10MB
 - **🔌 RESTful API** - Complete API with OpenAPI documentation
-- **🐳 Docker Ready** - Fully containerized deployment
 - **📊 ROUGE Evaluation** - Comprehensive model performance metrics
 
 ## 🚀 Quick Start
@@ -63,7 +62,7 @@ docker-compose up --build
 ## 📋 Requirements
 
 **Tech Stack:**
-- **Backend:** Python 3.8+, FastAPI, Uvicorn
+- **Backend:** Python 3.11+, FastAPI, Uvicorn
 - **AI/ML:** Transformers, PyTorch, Datasets
 - **Frontend:** Bootstrap, HTML/CSS/JavaScript
 - **Deployment:** Docker, Hugging Face Spaces
@@ -177,19 +176,6 @@ The training process includes:
 - **Live App:** Deployed on [Hugging Face Spaces](https://huggingface.co/spaces/Ananthakr1shnan/summarize-it)
 - **Model Hub:** Fine-tuned model available at [Hugging Face Hub](https://huggingface.co/Ananthakr1shnan/pegasus-samsum-finetuned)
 - **Zero Setup:** No installation required, just click and use!
-
-### 🐳 **Docker Deployment**
-
-```bash
-# Development
-docker-compose up --build
-
-# Production with scaling
-docker-compose --profile production up --scale summarize-app=3
-
-# Background mode
-docker-compose up -d
-```
 
 ## 📄 License
 
